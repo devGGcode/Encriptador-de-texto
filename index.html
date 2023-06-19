@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="es" >
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1><img class="logo" src="imagens/Logo_GG2.png" alt="Logo"></h1>
+
+            <div class="inputtxt">
+                <p class="subti">Ingrese el texto Aquí</p>
+                <textarea id="ingreso" class="txtingreso" cols="60" rows="30" required ></textarea>
+            </div>
+        </header>
+
+        <section>
+            <img  class="advertencia" src="imagens/warning.png" alt="icono de advertencia">
+            <p class="txtadver">Solo letras minúsculas y sin acentos
+            </p>
+            <button class="botones">Encriptar</button>
+            <button class="botones">Desencriptar</button>
+        </section>
+
+
+        <section class="resultado">
+            <img class="contenidoimg" src="imagens/busca22.png" alt="">
+            <h2 class="contenido">Ningún mensaje fue encontrado</h2>
+            <p class="contenido">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button class="contenidocopi">Copiar</button>
+        </section>
+
+        <footer>
+
+        <div class="alumG5">
+            <img id="logoalura" src="imagens/logo_oracleAlura-es_branca.1657102612.svg" alt="">
+            <img id="logoOne" src="imagens/e4621638-6168-4948-a623-76dcfdefd99c.webp" alt="">
+        </div>
+
+            <img class="pieimage" src="imagens/logoletterwhite.png" alt="Logo de pie de pagina">
+            <span class="piedepage" >Created by DevGG - 2023</span>
+
+        </footer>
+
+        <script>
+            var mostrarOcultar = true ;
+
+
+
+        document.addEventListener("DOMContentLoaded" , function(){
+            textarea = document.getElementById ("ingreso");
+        });
+
+        function enfocar(){
+            textarea.focus();
+        };
+
+        function mostrar_ocultar(){
+            if (mostrarOcultar) {
+            mostrarOcultar = false;
+            /*
+            document.getElementById("copiar_id").style.display = "block";
+            document.getElementById("imagen_lista_id").style.display = "none";
+            document.getElementById("aviso1_id").style.display = "none";
+            document.getElementById("aviso2_id").style.display = "none";
+            var cajita = document.getElementById("cajita_id");
+            cajita.style.gridTemplateRows = "1fr";
+    }
+}
+*/
+
+
+        </script>
+
+
+    </body>
+</html>
