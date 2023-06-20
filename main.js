@@ -2,8 +2,8 @@ let textarea;
 let mostrar_ocultarvar = true;
 let sec_result;
 let opcion = "";
-let textencrip;
-let textdesencrip;
+let textencrip ="";
+let textdesencrip = "";
 let mensaje;
 let textoa;
 let caracteresok = /[a-z\s]+/;
@@ -141,7 +141,7 @@ function boton_desencrip(){
             alert("Por favor, ingresa únicamente palabras con letras minúsculas y sin acentos");
         }
 
-    }else if(texto_desencrip != sec_result.textContent && (textencrip != "" || textdesencrip != "")){
+    }else if(textdesencrip != sec_result.textContent && (textencrip != "" || textdesencrip != "")){
         texto = sec_result.textContent;
         desencriptar(texto,sec_result);
     }

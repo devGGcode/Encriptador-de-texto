@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient( #E5E5E5, #121918);
+    background: linear-gradient( #c7cac9, #0e3c4b);
 }
 
 .logo{
@@ -11,6 +11,7 @@ body{
     position:relative;
     right: -200px;
     top: -90px;
+    margin: 0 auto;
 }
 
 .subti{
@@ -48,25 +49,28 @@ section{
     padding:0 0 15px 0;
 }
 
-
-
 .botones{
     background-color: #FFFFFF;
     color: #030303;
     padding:10px;
     font-size: 25px;
     border-radius: 20px;
-    border: solid 1px #23998e;
+    border: none;
+    margin: 0 auto;
 }
 
+.botones:hover{
+    box-shadow:  5px 5px 0px #0a232b;
+    }
+
 .resultado{
-        position:absolute;
-        right:1%;
-        top:1.2%;
-        background: #FFFFFF;
-        width: 420px;
-        height: 630px;
-        border-radius: 35px;
+    position:absolute;
+    right:1%;
+    top:1.2%;
+    background: #FFFFFF;
+    width: 420px;
+    height: 630px;
+    border-radius: 35px;
 }
 
 .contenidoimg{
@@ -100,33 +104,72 @@ section{
 
 
 footer{
-    background-size:1400px;
     padding:40px;
     font-size:50px;
+    text-align:center;
 }
 
 .alumG5{
-    position:absolute;
-    right:470px;
-    bottom:-290px;
+    position:relative;
+    right:-13px;
+    bottom:-100px;
 }
 
 
 .piedepage{
-    display:inline-blockblock;
     position:relative;
     color:white;
-    font-size: 17px;
-    right:-46%;
-    top:-40px;
+    font-size: 16px;
+    left:-68px;
+    top:-55px;
     font-style:oblique;
 }
 
 .pieimage{
     position:relative;
-    right:-625px;
-    top:-25px;
-    display:block;
+    right:-65px;
+    top:-75px;
     text-align:center;
-    width: 100px;
-} 
+    width: 80px;
+}
+
+@media screen and (max-width: 480px){
+
+    .logo{
+        position: relative;
+        right: -165px;
+    }
+
+    .inputtxt{
+        position:relative;
+        left: 10px;
+        top: -10px;
+        width: 0 auto;
+        height: 0 auto;
+
+    }
+
+    #ingresobot{
+        position: relative;
+        display: inline-block;
+        left: 25%;
+        top: 50%;
+    }
+
+    .resultado{
+        position: relative;
+        bottom: -30px;
+        right: -30px;
+        width: 0 auto;
+        height: 0 auto;
+    }
+
+    footer{
+        position: relative;
+        margin: 50px 0 0 0;
+        width: 0 auto;
+        height: 0 auto;
+        right: -70px;
+    }
+
+}
