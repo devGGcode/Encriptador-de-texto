@@ -7,6 +7,7 @@
         <title>Encriptador</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
     </head>
 
     <body>
@@ -23,16 +24,17 @@
             <img  class="advertencia" src="imagens/warning.png" alt="icono de advertencia">
             <p class="txtadver">Solo letras minúsculas y sin acentos
             </p>
-            <button class="botones">Encriptar</button>
-            <button class="botones">Desencriptar</button>
+            <button id="boton_encrip" onclick="boton_encrip()" class="botones">Encriptar</button>
+            <button id="boton_desencrip" onclick="boton_desencrip()" class="botones">Desencriptar</button>
         </section>
 
 
-        <section class="resultado">
-            <img class="contenidoimg" src="imagens/busca22.png" alt="">
-            <h2 class="contenido">Ningún mensaje fue encontrado</h2>
-            <p class="contenido">Ingresa el texto que desees encriptar o desencriptar.</p>
-            <button class="contenidocopi">Copiar</button>
+        <section class="resultado" id="resultid">
+            <p id="textresul"></p>
+            <img class="contenidoimg" id="imagenresul" src="imagens/busca22.png" alt="">
+            <h2 class="contenido" id="adver1">Ningún mensaje fue encontrado</h2>
+            <p class="contenido" id="adver2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <button class="contenidocopi" id="Botoncopiar" onclick="boton_copi()">Copiar</button>
         </section>
 
         <footer>
@@ -47,36 +49,5 @@
 
         </footer>
 
-        <script>
-            var mostrarOcultar = true ;
-
-
-
-        document.addEventListener("DOMContentLoaded" , function(){
-            textarea = document.getElementById ("ingreso");
-        });
-
-        function enfocar(){
-            textarea.focus();
-        };
-
-        function mostrar_ocultar(){
-            if (mostrarOcultar) {
-            mostrarOcultar = false;
-            /*
-            document.getElementById("copiar_id").style.display = "block";
-            document.getElementById("imagen_lista_id").style.display = "none";
-            document.getElementById("aviso1_id").style.display = "none";
-            document.getElementById("aviso2_id").style.display = "none";
-            var cajita = document.getElementById("cajita_id");
-            cajita.style.gridTemplateRows = "1fr";
-    }
-}
-*/
-
-
-        </script>
-
-
-    </body>
+    </body> 
 </html>
