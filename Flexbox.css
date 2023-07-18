@@ -1,66 +1,106 @@
-header{
+.container_inputtxt{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
+}
+
+.container_aviso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_ingresobot{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec_result{
+    display: flex;
     justify-content: center;
 }
 
 .resultado{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    width: 18rem;
+    height: 20rem;
+    flex-shrink: 1;
 }
 
-.aviso{
+.container_res{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-
+    align-items: center;
+    text-align: center;
 }
-
 
 footer{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
 }
 
-@media screen and (max-width: 710px){
-    body,.conteinerres,.divcopi{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+@media screen and (min-width: 768px){
+
+    .txtingreso{
+        width: 30rem;
+        height: 25rem;
     }
 
-    #ingresobot{
-        display: flex;
+    .container_ingresobot{
+        display:flex;
         flex-direction: row;
     }
+    .resultado{
+        width: 30rem;
+        height: 25rem;
+    }
+}
+
+@media screen and (min-width: 1124px){
+
+    #logo{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .subti{
+        margin-bottom: 1.50rem;
+    }
+
+    .container_inputtxt{
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        right: -9rem;
+    }
+
 
     .resultado{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        position: absolute;
+        top: 8.50rem;
+        right: 3rem;
+        width: 20rem;  
     }
 
-    #adver2{
-        text-align: center;
+    .container_aviso,.container_ingresobot{
+        position: relative;
+        left: -16rem;
+    }
+
+
+    footer{
+        margin: 6rem 0 0 0;
+        height: 7rem;
     }
 
 }
-
-@media screen and (max-width: 480px) {
-
-    body,.conteinerres,.divcopi{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}
-

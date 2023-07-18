@@ -4,7 +4,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="Flexbox.css">
@@ -17,41 +17,43 @@
             <div class="logo">
                 <h1><img id="logo" src="imagens/Logo_GG2.png" alt="Logo"></h1>
             </div>
+        </header>
 
-            <div class="inputtxt">
-                <p class="subti">Ingrese el texto Aquí</p>
-                <textarea id="ingreso" class="txtingreso" cols="60" rows="30" required ></textarea>
+        <form>
+        <div class="container_inputtxt">
+            <p class="subti">Ingrese el texto Aquí</p>
+            <textarea id="ingreso" class="txtingreso"></textarea>
             </div>
+        </form>
 
-            <div class="aviso">
+        <section class="menu">
+            <div class="container_aviso">
                 <img class="advertencia" src="imagens/warning.png" alt="icono de advertencia">
                 <p class="txtadver">Solo letras minúsculas y sin acentos</p>
                 </div>
 
-                <div id="ingresobot">
+                <div class="container_ingresobot">
                     <button id="boton_encrip" onclick="boton_encrip()" class="botones">Encriptar</button>
                     <button id="boton_desencrip" onclick="boton_desencrip()" class="botones">Desencriptar</button>
                 </div>
-                
-        </header>
-        <div class="conteinerres">
-            <div class="resultado" id="resultid">
+            </section>
+
+            <section  class="sec_result">
+                <div class="resultado" id="resultid">
                 <p id="textresul"></p>
-                <img class="contenidoimg" id="imagenresul" src="imagens/busca22.png" alt="">
-                <h2 class="contenido" id="adver1">Ningún mensaje fue encontrado</h2>
-                <p class="contenido" id="adver2">Ingresa el texto que desees encriptar o desencriptar.</p>
-                    <div class="divcopi">
-                        <button class="contenidocopi" id="Botoncopiar" onclick="boton_copi()">Copiar</button>
-                    </div>
-            </div>
-        </div>
+                <div class="container_res">
+                    <img class="contenidoimg" id="imagenresul" src="imagens/busca22.png" alt="">
+                    <h2 class="contenido" id="adver1">Ningún mensaje fue encontrado</h2>
+                    <p class="contenido" id="adver2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <button class="contenidocopi" id="Botoncopiar" onclick="boton_copi()">Copiar</button>
+                </div>
+            </section>
 
             <footer>
-        
-                    <img class="pieimage" src="imagens/logoletterwhite.png" alt="Logo de pie de pagina">
+                    <img class="pieimage" src="/imagens/Logo_GG2.png" alt="Logo de pie de pagina">
                     <span class="piedepage" >Created by DevGG - 2023</span>
-        
-                </footer>
+            </footer>
 
     </body> 
 </html>
